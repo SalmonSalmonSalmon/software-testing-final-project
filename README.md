@@ -2,11 +2,11 @@
 
 ## Table of Contents
 + [Environment] (#environment)
-+ [Executing the Web Application] (#executing-the-web-application)
-+ [Executing Unit Tests] (#executing-unit-tests)
-+ [Executing Unit Test Coverage] (#executing-unit-test-coverage)
-+ [Executing End-To-End Tests] (#executing-end-to-end-tests)
-+ [Final Video Presentation] (#final-video-presentation)
++ [Executing the Web Application] (README.md#executing-the-web-application)
++ [Executing Unit Tests] (README.md#executing-unit-tests)
++ [Executing Unit Test Coverage] (README.md#executing-unit-test-coverage)
++ [Executing End-To-End Tests] (README.md#executing-end-to-end-tests)
++ [Final Video Presentation] (README.md#final-video-presentation)
 
 ## Team Members
 + Duncan Pegram
