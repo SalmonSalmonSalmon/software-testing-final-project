@@ -1,0 +1,9 @@
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\bin\Debug\CalculatorLogicUnitTests.dll
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\bin\Debug\CalculatorLogicUnitTests.pdb
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\bin\Debug\nunit.framework.dll
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\bin\Debug\nunit.framework.xml
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\obj\Debug\CalculatorLogicUnitTests.csproj.AssemblyReference.cache
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\obj\Debug\CalculatorLogicUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\obj\Debug\CalculatorLogicUnitTests.csproj.CopyComplete
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\obj\Debug\CalculatorLogicUnitTests.dll
+C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests\obj\Debug\CalculatorLogicUnitTests.pdb

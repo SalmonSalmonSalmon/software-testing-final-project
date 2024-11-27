@@ -5,14 +5,14 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{3F42DF4F-3D65-47EF-9B38-B0095EB25C67}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{B2786564-4283-4D95-AC85-597E01E137DF}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>CalculatorLogicUnitTests</RootNamespace>
         <AssemblyName>CalculatorLogicUnitTests</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,8 +38,14 @@
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="..\CalculatorLogic\CalculatorLogic.cs">
+          <Link>CalculatorLogic.cs</Link>
+        </Compile>
         <Compile Include="CalculatorLogicUnitTests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
