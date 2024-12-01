@@ -1,0 +1,256 @@
+﻿@page "/"
+@rendermode InteractiveServer
+<PageTitle>Calculator</PageTitle>
+
+<table>
+    <tr>
+        <td>
+            <h1>Calculator</h1>
+        </td>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000;" @onclick="ClearOnClick">Clear</button>
+        </td>
+    </tr>
+    <tr>
+        <td style = "background-color:@outputBackgroundColor; color:@outputTextColor">
+            <p aria-label="outputText"><b>@outputText</b></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Values</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <textarea @bind="inputField" aria-label="inputField"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Descriptive Statistics</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000;" @onclick="OnClickSampleSD">Compute Sample Standard Deviation | One Value Per Line</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000;"@onclick="OnClickPopulationSD">Compute Population Standard Deviation | One Value Per Line</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000; "@onclick="OnClickMean">Compute Mean | One Value Per Line</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000;"@onclick="OnClickZScore">Compute Z-Score | value, mean, StdDev on one line</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Single Linear Regression</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000;"@onclick="OnClickRegressionFormula">Compute Single Linear Regression Formula | One X,Y Pair Per Line</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" style="background-color:#EBEBEB; color: #000000;"@onclick="OnClickRegressionPrediction">Compute Y From Linear Regression Formula | m,x,b On One Line</button>
+        </td>
+    </tr>
+</table>
+
+@code{
+    string inputField;
+    string outputText = "Enter values below, then select an operation";
+    string outputTextColor = "#000000";
+    string outputBackgroundColor = "#FFECD7";
+    CalculatorUISystem calculatorRef = new CalculatorUISystem();
+    
+    void ClearOnClick()
+    { 
+        outputText = "Enter values below, then select an operation";
+        outputTextColor = "#000000";
+        outputBackgroundColor = "#FFECD7";
+        inputField = "";
+    }
+
+    void OnClickMean()
+    {
+        try
+        {
+            outputText = calculatorRef.FormatMean(inputField);
+            outputTextColor = "#000000";
+            outputBackgroundColor = "#FFECD7";
+        }
+        catch (FormatException e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Values must be only valid doubles";
+        }
+        catch (NullReferenceException)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Must have at least one input";
+        }
+        catch (Exception e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = e.Message;
+        }
+        
+    }
+    void OnClickPopulationSD()
+    {
+        try
+        {
+            outputText = calculatorRef.FormatPopulationSD(inputField);
+            outputTextColor = "#000000";
+            outputBackgroundColor = "#FFECD7";
+        }
+        catch (FormatException e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Values must be only valid doubles";
+        }
+        catch (NullReferenceException)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Must have at least one input";
+        }
+        catch (Exception e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = e.Message;
+        }
+        
+    }
+    void OnClickSampleSD()
+    {
+        try
+        {
+            outputText = calculatorRef.FormatSampleSD(inputField);
+            outputTextColor = "#000000";
+            outputBackgroundColor = "#FFECD7";
+        }
+        catch (FormatException e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Values must be only valid doubles";
+        }
+        catch (NullReferenceException)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Must have at least one input";
+        }
+        catch (Exception e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = e.Message;
+        }
+        
+    }
+    void OnClickZScore()
+    {
+        try
+        {
+            outputText = calculatorRef.FormatZScore(inputField);
+            outputTextColor = "#000000";
+            outputBackgroundColor = "#FFECD7";
+        }
+        catch (FormatException e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Values must be only valid doubles";
+        }
+        catch (NullReferenceException)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Must have at least one input";
+        }
+        catch (Exception e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = e.Message;
+        }
+        
+    }
+    void OnClickRegressionFormula()
+    {
+        try
+        {
+            outputText = calculatorRef.FormatRegressionFormula(inputField);
+            outputTextColor = "#000000";
+            outputBackgroundColor = "#FFECD7";
+        }
+        catch (FormatException e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Values must be only valid doubles";
+        }
+        catch (NullReferenceException)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Must have at least two inputs";
+        }
+        catch (Exception e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = e.Message;
+        }
+        
+    }
+    void OnClickRegressionPrediction()
+    {
+        try
+        {
+            outputText = calculatorRef.FormatRegressionPrediction(inputField);
+            outputTextColor = "#000000";
+            outputBackgroundColor = "#FFECD7";
+        }
+        catch (FormatException e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Values must be only valid doubles";
+        }
+        catch (NullReferenceException)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = "Must have at least one input";
+        }
+        catch (Exception e)
+        {
+            outputTextColor = "#FFFFFF";
+            outputBackgroundColor = "#B70F0A";
+            outputText = e.Message;
+        }
+        
+    }
+
+}
+

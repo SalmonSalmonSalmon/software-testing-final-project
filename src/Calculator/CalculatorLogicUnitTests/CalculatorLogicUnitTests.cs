@@ -337,6 +337,7 @@ namespace CalculatorLogicUnitTests
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
+            
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
@@ -348,11 +349,29 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSingleLinearRegressionFormula_InvalidArrayTooLow_ArgumentException()
+        
+        public void ComputeSingleLinearRegressionFormula_ListOfOne_ArgumentException()
+        {
+            CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
+            List<double[]> inputList = new List<double[]>();
+            inputList.Add(new double[] { 1, 5 });
+            try
+            {
+                linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
+                Assert.True(false);
+            }
+            catch (ArgumentException)
+            {
+                Assert.True(true);
+            }
+        }
+        [Test]
+        public void ComputeSingleLinearRegressionFormula_InvalidArrayTooFewParameters_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
             inputList.Add(new double[] { 1 });
+            inputList.Add(new double[] { 2, 2 });
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
@@ -364,11 +383,12 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSingleLinearRegressionFormula_InvalidArrayTooHigh_ArgumentException()
+        public void ComputeSingleLinearRegressionFormula_InvalidArrayTooManyParameters_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
             inputList.Add(new double[] { 1, 3, 5 });
+            inputList.Add(new double[] { 2, 2 });
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
@@ -385,6 +405,9 @@ namespace CalculatorLogicUnitTests
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
             inputList.Add(new double[] { 1, 5 });
+            inputList.Add(new double[] { 5, 4 });
+            inputList.Add(new double[] { 3, 8 });
+            inputList.Add(new double[] { 6, 2 });
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);

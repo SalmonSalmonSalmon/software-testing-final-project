@@ -75,9 +75,9 @@ namespace CalculatorLogic
         public double[] ComputeSingleLinearRegressionFormula(List<double[]> inputList)
             //preq-LOGIC-7
         {
-            if (inputList.Count == 0)
+            if (inputList.Count == 0 || inputList.Count == 1)
             {
-                throw new ArgumentException("Must have at least one input");
+                throw new ArgumentException("Must have at least two inputs");
             }
             for (int i = 0; i < inputList.Count; i++)
             {
