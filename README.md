@@ -15,13 +15,13 @@
 ![image](SoftwareTestingUMLDiagram.png)
 ## Environment
 This Application was designed and tested in Windows 11. I cannot promise that it will work on any other platform.
-
+Ideally everything needed should work with what's included in the GitHub, at most you might need to download Playwright and PowerShell.
 ## Executing the Web Application
 
 ## Executing Unit Tests
 
 ## Reviewing Unit Test Coverage
-
+![image](SoftwareTestingUnitTestCoverageScreenshot.png)
 ## Executing End-To-End Tests
 
 ## Final Video Presentation
