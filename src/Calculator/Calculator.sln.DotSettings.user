@@ -12,7 +12,7 @@
     &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=81bed1b7_002Dafc8_002D4384_002D8410_002Db078fa96c959/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;CalculatorLogicUnitTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=81bed1b7_002Dafc8_002D4384_002D8410_002Db078fa96c959/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;CalculatorLogicUnitTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests" Presentation="&amp;lt;CalculatorLogicUnitTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd2b3049_002D4993_002D412d_002Db1cb_002Dbddf7a76d306/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorUISystem_FormatSampleSD_AccurateResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -21,7 +21,7 @@
     &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests.CalculatorUISystem_FormatPopulationSD_EmptyInputErrorMessage&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c5a617bd_002D1439_002D43d6_002Da128_002Df1b4821de29e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c5a617bd_002D1439_002D43d6_002Da128_002Df1b4821de29e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c76d2d29_002D0096_002D4ad5_002D9491_002Dcb4b2580dc57/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -39,7 +39,7 @@
     &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests.CalculatorUISystem_FormatSampleSD_OneLineInputErrorMessage&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df32faa9_002D3143_002D4ae2_002D8abf_002D78c009276664/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculatorUISystem_FormatRegressionPrediction_AccurateResult #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df32faa9_002D3143_002D4ae2_002D8abf_002D78c009276664/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorUISystem_FormatRegressionPrediction_AccurateResult #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests.CalculatorUISystem_FormatRegressionPrediction_AccurateResult&lt;/TestId&gt;&#xD;
@@ -47,6 +47,11 @@
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;21EF0870-BC3E-47DD-84A4-34832C7A5242/f:CalculatorEndToEndTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e5e1985a_002Da60e_002D4df0_002D93b1_002D017e52891dbf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ffeac1df_002D4cf5_002D4ac0_002Dbdd7_002De9eae193893d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorUISystem_FormatRegressionPrediction_AccurateResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
