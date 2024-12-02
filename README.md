@@ -27,6 +27,7 @@ Open the command line, then type:
 ```
 dotnet test "<project file path>\src\Calculator\CalculatorLogicUnitTests\bin\Debug\CalculatorLogicUnitTests.dll"
 ```
+![image](SoftwareTestingUnitTestScreenshot.png)
 ## Reviewing Unit Test Coverage
 ![image](SoftwareTestingUnitTestCoverageScreenshot.png)
 ## Executing End-To-End Tests
@@ -35,4 +36,5 @@ Open the command line, then type:
 ```
 dotnet test "<project file path>\src\Calculator\CalculatorEndToEndTests\bin\Debug\CalculatorEndToEndTests.dll"
 ```
+![image](SoftwareTestingEndToEndTestScreenshot.png)
 ## Final Video Presentation
