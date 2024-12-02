@@ -12,7 +12,7 @@
 + Duncan Pegram
 
 ## Architecture
-
+![image](SoftwareTestingUMLDiagram.png)
 ## Environment
 This Application was designed and tested in Windows 11. I cannot promise that it will work on any other platform.
 
