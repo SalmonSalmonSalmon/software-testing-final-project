@@ -10,19 +10,19 @@ namespace CalculatorLogicUnitTests
     {
         
         [Test]
-        public void ComputeMean_ValidList_NoException()
+        public void CalculatorLogic_ComputeMean_ValidList_NoException()
         //preq-UNIT-TEST-4-A
         {
             //tests to make sure that a valid list actually counts as a valid list
             CalculatorLogic.CalculatorLogic meanTestValidListCalc = new CalculatorLogic.CalculatorLogic();
             List<double> meanTestValidList = new List<double>();
             meanTestValidList.Add(9.0);
-            meanTestValidList.Add(6.0);
+            meanTestValidList.Add(6.0); 
             meanTestValidList.Add(8.0);
             meanTestValidList.Add(5.0);
             meanTestValidList.Add(7.0);
             try
-            {
+            {   
                 meanTestValidListCalc.ComputeMean(meanTestValidList);
                 
                 Assert.True(true);
@@ -35,7 +35,7 @@ namespace CalculatorLogicUnitTests
             
         }
         [Test]
-        public void ComputeMean_InvalidList_ArguementException()
+        public void CalculatorLogic_ComputeMean_InvalidList_ArguementException()
             //preq-UNIT-TEST-4-B
         {
             //tests to make sure an invalid list throws an exception
@@ -54,7 +54,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void ComputeMean_Calculation_ResultOfSeven()
+        public void CalculatorLogic_ComputeMean_Calculation_ResultOfSeven()
             //preq-UNIT-TEST-4-C
         {
             //tests to make sure that the mean is properly calculated using the example values
@@ -69,7 +69,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void ComputeSampleStandardDeviation_ValidList_NoException()
+        public void CalculatorLogic_ComputeSampleStandardDeviation_ValidList_NoException()
         //preq-UNIT-TEST-2-A
         {
             CalculatorLogic.CalculatorLogic sampleSDTestValidListCalc = new CalculatorLogic.CalculatorLogic();
@@ -91,7 +91,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSampleStandardDeviation_InvalidList_ArgumentException()
+        public void CalculatorLogic_ComputeSampleStandardDeviation_InvalidList_ArgumentException()
             //preq-UNIT-TEST-2-B
         {
             CalculatorLogic.CalculatorLogic sampleSDTestInvalidListCalc = new CalculatorLogic.CalculatorLogic();
@@ -108,7 +108,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSampleStandardDeviation_InvalidListOfOne_ArgumentException()
+        public void CalculatorLogic_ComputeSampleStandardDeviation_InvalidListOfOne_ArgumentException()
             //preq-UNIT-TEST-2-C
         {
             CalculatorLogic.CalculatorLogic sampleSDTestInvalidListCalc = new CalculatorLogic.CalculatorLogic();
@@ -126,7 +126,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSampleStandardDeviation_CalculationWorks_ResultFromRequirements()
+        public void CalculatorLogic_ComputeSampleStandardDeviation_CalculationWorks_ResultFromRequirements()
             //preq-UNIT-TEST-2-D
         {
             CalculatorLogic.CalculatorLogic sampleSDTestListCalc = new CalculatorLogic.CalculatorLogic();
@@ -148,7 +148,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSampleStandardDeviation_CalculationWorksAllZeros_ResultOfZero()
+        public void CalculatorLogic_ComputeSampleStandardDeviation_CalculationWorksAllZeros_ResultOfZero()
             //preq-UNIT-TEST-2-E
         {
             CalculatorLogic.CalculatorLogic sampleSDTestListCalc = new CalculatorLogic.CalculatorLogic();
@@ -170,7 +170,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputePopulationStandardDeviation_ValidList_NoException()
+        public void CalculatorLogic_ComputePopulationStandardDeviation_ValidList_NoException()
             //preq-UNIT-TEST-3-A
         {
             CalculatorLogic.CalculatorLogic populationSDTestValidListCalc = new CalculatorLogic.CalculatorLogic();
@@ -192,7 +192,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputePopulationStandardDeviation_InvalidList_ArgumentException()
+        public void CalculatorLogic_ComputePopulationStandardDeviation_InvalidList_ArgumentException()
             //preq-UNIT-TEST-3-B
         {
             CalculatorLogic.CalculatorLogic populationSDTestInvalidListCalc = new CalculatorLogic.CalculatorLogic();
@@ -209,7 +209,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputePopulationStandardDeviation_CalculationWorks_ResultFromRequirements_RoundedToThirteenPlaces()
+        public void CalculatorLogic_ComputePopulationStandardDeviation_CalculationWorks_ResultFromRequirements_RoundedToThirteenPlaces()
             //preq-UNIT-TEST-3-C
         {
             CalculatorLogic.CalculatorLogic populationSDTestListCalc = new CalculatorLogic.CalculatorLogic();
@@ -231,7 +231,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputePopulationStandardDeviation_CalculationWorksAllZeros_ResultOfZero()
+        public void CalculatorLogic_ComputePopulationStandardDeviation_CalculationWorksAllZeros_ResultOfZero()
             //preq-UNIT-TEST-3-D
         {
             CalculatorLogic.CalculatorLogic populationSDTestListCalc = new CalculatorLogic.CalculatorLogic();
@@ -254,7 +254,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void ComputeZScore_ValidList_NoException()
+        public void CalculatorLogic_ComputeZScore_ValidList_NoException()
         //preq-UNIT-TEST-5-A
         {
             CalculatorLogic.CalculatorLogic ZScoreCalc = new CalculatorLogic.CalculatorLogic();
@@ -274,7 +274,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void ComputeZScore_InvalidList_ArgumentException()
+        public void CalculatorLogic_ComputeZScore_InvalidList_ArgumentException()
             //preq-UNIT-TEST-5-B
         {
             CalculatorLogic.CalculatorLogic ZScoreCalc = new CalculatorLogic.CalculatorLogic();
@@ -294,7 +294,7 @@ namespace CalculatorLogicUnitTests
         }
         
         [Test]
-        public void ComputeZScore_StdDevZero_DivideByZeroException()
+        public void CalculatorLogic_ComputeZScore_StdDevZero_DivideByZeroException()
             //preq-UNIT-TEST-5-C
         {
             CalculatorLogic.CalculatorLogic ZScoreCalc = new CalculatorLogic.CalculatorLogic();
@@ -313,7 +313,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeZScore_CalculationWorks_ResultofNegativeTwo()
+        public void CalculatorLogic_ComputeZScore_CalculationWorks_ResultofNegativeTwo()
             //preq-UNIT-TEST-5-D
         {
             CalculatorLogic.CalculatorLogic ZScoreCalc = new CalculatorLogic.CalculatorLogic();
@@ -333,7 +333,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void ComputeSingleLinearRegressionFormula_EmptyList_ArgumentException()
+        public void CalculatorLogic_ComputeSingleLinearRegressionFormula_EmptyList_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
@@ -350,7 +350,7 @@ namespace CalculatorLogicUnitTests
         }
         [Test]
         
-        public void ComputeSingleLinearRegressionFormula_ListOfOne_ArgumentException()
+        public void CalculatorLogic_ComputeSingleLinearRegressionFormula_ListOfOne_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
@@ -366,7 +366,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSingleLinearRegressionFormula_InvalidArrayTooFewParameters_ArgumentException()
+        public void CalculatorLogic_ComputeSingleLinearRegressionFormula_InvalidArrayTooFewParameters_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
@@ -383,7 +383,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSingleLinearRegressionFormula_InvalidArrayTooManyParameters_ArgumentException()
+        public void CalculatorLogic_ComputeSingleLinearRegressionFormula_InvalidArrayTooManyParameters_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
@@ -400,7 +400,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSingleLinearRegressionFormula_ValidArray_NoException()
+        public void CalculatorLogic_ComputeSingleLinearRegressionFormula_ValidArray_NoException()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
@@ -419,7 +419,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void ComputeSingleLinearRegressionFormula_CalculationTest_ResultOfSlopeOneInterceptZero()
+        public void CalculatorLogic_ComputeSingleLinearRegressionFormula_CalculationTest_ResultOfSlopeOneInterceptZero()
         {
             CalculatorLogic.CalculatorLogic linRegCalc = new CalculatorLogic.CalculatorLogic();
             List<double[]> inputList = new List<double[]>();
@@ -443,7 +443,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void PredictYFromLinearRegressionFormula_MissingParameters_ArgumentException()
+        public void CalculatorLogic_PredictYFromLinearRegressionFormula_MissingParameters_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegPredictCalc = new CalculatorLogic.CalculatorLogic();
             try
@@ -457,7 +457,7 @@ namespace CalculatorLogicUnitTests
             }
         }
         [Test]
-        public void PredictYFromLinearRegressionFormula_TooManyParameters_ArgumentException()
+        public void CalculatorLogic_PredictYFromLinearRegressionFormula_TooManyParameters_ArgumentException()
         {
             CalculatorLogic.CalculatorLogic linRegPredictCalc = new CalculatorLogic.CalculatorLogic();
             try
@@ -472,7 +472,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void PredictYFromLinearRegressionFormula_TooFewParameters_ArgumentException()
+        public void CalculatorLogic_PredictYFromLinearRegressionFormula_TooFewParameters_ArgumentException()
         {
             {
                 CalculatorLogic.CalculatorLogic linRegPredictCalc = new CalculatorLogic.CalculatorLogic();
@@ -489,7 +489,7 @@ namespace CalculatorLogicUnitTests
         }
 
         [Test]
-        public void PredictYFromLinearRegressionFormula_ProperInput_NoException()
+        public void CalculatorLogic_PredictYFromLinearRegressionFormula_ProperInput_NoException()
         {
             CalculatorLogic.CalculatorLogic linRegPredictCalc = new CalculatorLogic.CalculatorLogic();
             double[] inputList = new double[] { 1, 2, 3 };
@@ -503,6 +503,7 @@ namespace CalculatorLogicUnitTests
                 Assert.True(false);
             }
         }
+        [Test]
         public void PredictYFromLinearRegressionFormula_Calculation_ResultOfFive()
         {
             CalculatorLogic.CalculatorLogic linRegPredictCalc = new CalculatorLogic.CalculatorLogic();

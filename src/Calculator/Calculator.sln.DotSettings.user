@@ -51,6 +51,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e5e1985a_002Da60e_002D4df0_002D93b1_002D017e52891dbf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B2786564-4283-4D95-AC85-597E01E137DF::.NETFramework,Version=v4.7.2::CalculatorLogicUnitTests.CalculatorLogicUnitTests.PredictYFromLinearRegressionFormula_Calculation_ResultOfFive&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B2786564-4283-4D95-AC85-597E01E137DF::.NETFramework,Version=v4.7.2::CalculatorLogicUnitTests.CalculatorLogicUnitTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ffeac1df_002D4cf5_002D4ac0_002Dbdd7_002De9eae193893d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorUISystem_FormatRegressionPrediction_AccurateResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
