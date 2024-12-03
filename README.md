@@ -21,14 +21,14 @@ Ideally everything needed should work with what's included in the GitHub, at mos
 ## Executing the Web Application
 Open the command line, then type:
 ```
-"dotnet run <project file path>\src\Calculator\CalculatorWebServerApp\bin\Debug\net9.0\CalculatorWebServerApp.exe"
+"dotnet run <project file path>\src\Calculator\CalculatorWebServerApp\CalculatorWebServerApp.csproj"
 ```
 You should see a section of the running file that says "now listening on:" followed by a link to a localhost port. Copy that link into your browser to view the page while the program is running.
 ![image](SoftwareTestingWebAppSampleOutput.png)
 ## Executing Unit Tests
 Open the command line, then type:
 ```
-dotnet test "<project file path>\src\Calculator\CalculatorLogicUnitTests\bin\Debug\CalculatorLogicUnitTests.dll"
+dotnet test "<project file path>\src\Calculator\CalculatorLogicUnitTests\CalculatorLogicUnitTests.csproj"
 ```
 ![image](SoftwareTestingUnitTestScreenshot.png)
 ## Reviewing Unit Test Coverage
@@ -37,7 +37,7 @@ dotnet test "<project file path>\src\Calculator\CalculatorLogicUnitTests\bin\Deb
 Note: The web server app must be running to execute end-to-end tests.
 Open the command line, then type:
 ```
-dotnet test "<project file path>\src\Calculator\CalculatorEndToEndTests\bin\Debug\CalculatorEndToEndTests.dll"
+dotnet test "<project file path>\src\Calculator\CalculatorEndToEndTests\CalculatorEndToEndTests.csproj"
 ```
 ![image](SoftwareTestingEndToEndTestScreenshot.png)
 ## Final Video Presentation
