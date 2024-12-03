@@ -1,6 +1,7 @@
 # KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
 
-Quick note: When I tried to download the file from GitHub, my antivirus autoflagged it. I checked out what it was flagged as and pretty much the only results coming up were from developers who had also gotten similar flags, even including a university student developing a similar project to mine. It's more than likely a false positive, but I wanted to let you know in advance that it's a known potential issue.
+Quick note: When I tried to download the file from GitHub, my antivirus auto-flagged it. I checked out what it was flagged as and pretty much the only results coming up were from developers who had also gotten similar flags, even including a university student developing a similar project to mine. It's more than likely a false positive, but I wanted to let you know in advance that it's a known potential issue.
+Additionally, there were a few files (playwright packages) that were too large to upload to GitHub, if anything causes a problem with running the Playwright tests or viewing the files for grading, please email me and I'll bring it in to show in person.
 ## Table of Contents
 + [Environment](#environment)
 + [Executing the Web Application](#executing-the-web-application)
