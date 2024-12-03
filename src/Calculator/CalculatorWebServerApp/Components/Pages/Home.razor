@@ -69,188 +69,188 @@
 </table>
 
 @code{
-    string inputField;
-    string outputText = "Enter values below, then select an operation";
-    string outputTextColor = "#000000";
-    string outputBackgroundColor = "#FFECD7";
-    CalculatorUISystem calculatorRef = new CalculatorUISystem();
-    
-    void ClearOnClick()
-    { 
-        outputText = "Enter values below, then select an operation";
-        outputTextColor = "#000000";
-        outputBackgroundColor = "#FFECD7";
-        inputField = "";
-    }
+string inputField;
+string outputText = "Enter values below, then select an operation";
+string outputTextColor = "#000000";
+string outputBackgroundColor = "#FFECD7";
+CalculatorUISystem calculatorRef = new CalculatorUISystem();
 
-    void OnClickMean()
-    {
-        try
-        {
-            outputText = calculatorRef.FormatMean(inputField);
-            outputTextColor = "#000000";
-            outputBackgroundColor = "#FFECD7";
-        }
-        catch (FormatException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Values must be only valid doubles";
-        }
-        catch (NullReferenceException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Must have at least one input";
-        }
-        catch (Exception e)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = e.Message;
-        }
-        
-    }
-    void OnClickPopulationSD()
-    {
-        try
-        {
-            outputText = calculatorRef.FormatPopulationSD(inputField);
-            outputTextColor = "#000000";
-            outputBackgroundColor = "#FFECD7";
-        }
-        catch (FormatException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Values must be only valid doubles";
-        }
-        catch (NullReferenceException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Must have at least one input";
-        }
-        catch (Exception e)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = e.Message;
-        }
-        
-    }
-    void OnClickSampleSD()
-    {
-        try
-        {
-            outputText = calculatorRef.FormatSampleSD(inputField);
-            outputTextColor = "#000000";
-            outputBackgroundColor = "#FFECD7";
-        }
-        catch (FormatException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Values must be only valid doubles";
-        }
-        catch (NullReferenceException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Must have at least one input";
-        }
-        catch (Exception e)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = e.Message;
-        }
-        
-    }
-    void OnClickZScore()
-    {
-        try
-        {
-            outputText = calculatorRef.FormatZScore(inputField);
-            outputTextColor = "#000000";
-            outputBackgroundColor = "#FFECD7";
-        }
-        catch (FormatException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Values must be only valid doubles";
-        }
-        catch (NullReferenceException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Must have at least one input";
-        }
-        catch (Exception e)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = e.Message;
-        }
-        
-    }
-    void OnClickRegressionFormula()
-    {
-        try
-        {
-            outputText = calculatorRef.FormatRegressionFormula(inputField);
-            outputTextColor = "#000000";
-            outputBackgroundColor = "#FFECD7";
-        }
-        catch (FormatException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Values must be only valid doubles";
-        }
-        catch (NullReferenceException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Must have at least two inputs";
-        }
-        catch (Exception e)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = e.Message;
-        }
-        
-    }
-    void OnClickRegressionPrediction()
-    {
-        try
-        {
-            outputText = calculatorRef.FormatRegressionPrediction(inputField);
-            outputTextColor = "#000000";
-            outputBackgroundColor = "#FFECD7";
-        }
-        catch (FormatException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Values must be only valid doubles";
-        }
-        catch (NullReferenceException)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = "Must have at least one input";
-        }
-        catch (Exception e)
-        {
-            outputTextColor = "#FFFFFF";
-            outputBackgroundColor = "#B70F0A";
-            outputText = e.Message;
-        }
-        
-    }
+void ClearOnClick()
+{
+outputText = "Enter values below, then select an operation";
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+inputField = "";
+}
+
+void OnClickMean()
+{
+try
+{
+outputText = calculatorRef.FormatMean(inputField);
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+}
+catch (FormatException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Values must be only valid doubles";
+}
+catch (NullReferenceException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Must have at least one input";
+}
+catch (Exception e)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = e.Message;
+}
+
+}
+void OnClickPopulationSD()
+{
+try
+{
+outputText = calculatorRef.FormatPopulationSD(inputField);
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+}
+catch (FormatException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Values must be only valid doubles";
+}
+catch (NullReferenceException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Must have at least one input";
+}
+catch (Exception e)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = e.Message;
+}
+
+}
+void OnClickSampleSD()
+{
+try
+{
+outputText = calculatorRef.FormatSampleSD(inputField);
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+}
+catch (FormatException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Values must be only valid doubles";
+}
+catch (NullReferenceException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Must have at least one input";
+}
+catch (Exception e)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = e.Message;
+}
+
+}
+void OnClickZScore()
+{
+try
+{
+outputText = calculatorRef.FormatZScore(inputField);
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+}
+catch (FormatException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Values must be only valid doubles";
+}
+catch (NullReferenceException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Must have at least one input";
+}
+catch (Exception e)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = e.Message;
+}
+
+}
+void OnClickRegressionFormula()
+{
+try
+{
+outputText = calculatorRef.FormatRegressionFormula(inputField);
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+}
+catch (FormatException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Values must be only valid doubles";
+}
+catch (NullReferenceException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Must have at least two inputs";
+}
+catch (Exception e)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = e.Message;
+}
+
+}
+void OnClickRegressionPrediction()
+{
+try
+{
+outputText = calculatorRef.FormatRegressionPrediction(inputField);
+outputTextColor = "#000000";
+outputBackgroundColor = "#FFECD7";
+}
+catch (FormatException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Values must be only valid doubles";
+}
+catch (NullReferenceException)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = "Must have at least one input";
+}
+catch (Exception e)
+{
+outputTextColor = "#FFFFFF";
+outputBackgroundColor = "#B70F0A";
+outputText = e.Message;
+}
+
+}
 
 }
 

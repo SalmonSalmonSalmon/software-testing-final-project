@@ -25,11 +25,11 @@ namespace CalculatorLogicUnitTests
             {   
                 meanTestValidListCalc.ComputeMean(meanTestValidList);
                 
-                Assert.True(true);
+                Assert.That(true);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
             
             
@@ -44,11 +44,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 meanTestInvalidListCalc.ComputeMean(meanTestInvalidList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (Exception)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
             
         }
@@ -65,7 +65,7 @@ namespace CalculatorLogicUnitTests
             meanTestList.Add(8.0);
             meanTestList.Add(5.0);
             meanTestList.Add(7.0);
-            Assert.True(meanTestListCalc.ComputeMean(meanTestList) == 7.0);
+            Assert.That(meanTestListCalc.ComputeMean(meanTestList) == 7.0);
         }
 
         [Test]
@@ -83,11 +83,11 @@ namespace CalculatorLogicUnitTests
             {
                 sampleSDTestValidListCalc.ComputeSampleStandardDeviation(sampleSDTestValidList);
                 
-                Assert.True(true);
+                Assert.That(true);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -100,11 +100,11 @@ namespace CalculatorLogicUnitTests
             {
                 sampleSDTestInvalidListCalc.ComputeSampleStandardDeviation(sampleSDTestInvalidList);
                 
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -118,11 +118,11 @@ namespace CalculatorLogicUnitTests
             {
                 sampleSDTestInvalidListCalc.ComputeSampleStandardDeviation(sampleSDTestInvalidList);
                 
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -139,12 +139,12 @@ namespace CalculatorLogicUnitTests
             try
             {
                 
-                Assert.True(sampleSDTestListCalc.ComputeSampleStandardDeviation(sampleSDTestList) == 1.5811388300841898);
+                Assert.That(sampleSDTestListCalc.ComputeSampleStandardDeviation(sampleSDTestList) == 1.5811388300841898);
                 
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -161,12 +161,12 @@ namespace CalculatorLogicUnitTests
             try
             {
                 
-                Assert.True(sampleSDTestListCalc.ComputeSampleStandardDeviation(sampleSDTestList) == 0.0);
+                Assert.That(sampleSDTestListCalc.ComputeSampleStandardDeviation(sampleSDTestList) == 0.0);
                 
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -184,11 +184,11 @@ namespace CalculatorLogicUnitTests
             {
                 populationSDTestValidListCalc.ComputePopulationStandardDeviation(populationSDTestValidList);
                 
-                Assert.True(true);
+                Assert.That(true);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -201,11 +201,11 @@ namespace CalculatorLogicUnitTests
             {
                 populationSDTestInvalidListCalc.ComputePopulationStandardDeviation(populationSDTestInvalidList);
                 
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -223,11 +223,11 @@ namespace CalculatorLogicUnitTests
             {
                 
                 
-                Assert.True(Math.Round(populationSDTestListCalc.ComputePopulationStandardDeviation(populationSDTestList), 13) == 1.4142135623731);
+                Assert.That(Math.Round(populationSDTestListCalc.ComputePopulationStandardDeviation(populationSDTestList), 13) == 1.4142135623731);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -244,12 +244,12 @@ namespace CalculatorLogicUnitTests
             try
             {
                 
-                Assert.True(populationSDTestListCalc.ComputePopulationStandardDeviation(populationSDTestList) == 0.0);
+                Assert.That(populationSDTestListCalc.ComputePopulationStandardDeviation(populationSDTestList) == 0.0);
                 
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
 
@@ -265,11 +265,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 ZScoreCalc.ComputeZScore(inputList);
-                Assert.True(true);
+                Assert.That(true);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
 
@@ -285,11 +285,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 ZScoreCalc.ComputeZScore(inputList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         
@@ -305,11 +305,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 ZScoreCalc.ComputeZScore(inputList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (DivideByZeroException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -323,12 +323,12 @@ namespace CalculatorLogicUnitTests
             inputList[2] = 1;
             try
             {
-                Assert.True(ZScoreCalc.ComputeZScore(inputList)== -2.0);
+                Assert.That(ZScoreCalc.ComputeZScore(inputList)== -2.0);
                 
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
 
@@ -341,11 +341,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -358,11 +358,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -375,11 +375,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -392,11 +392,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -411,11 +411,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.True(true);
+                Assert.That(true);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -434,11 +434,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 
-                Assert.True(linRegCalc.ComputeSingleLinearRegressionFormula(inputList)[0] == expectedResult[0] && linRegCalc.ComputeSingleLinearRegressionFormula(inputList)[1] == expectedResult[1]);
+                Assert.That(linRegCalc.ComputeSingleLinearRegressionFormula(inputList)[0] == expectedResult[0] && linRegCalc.ComputeSingleLinearRegressionFormula(inputList)[1] == expectedResult[1]);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
 
@@ -449,11 +449,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegPredictCalc.PredictYFromLinearRegressionFormula(new double[0]);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
         [Test]
@@ -463,11 +463,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegPredictCalc.PredictYFromLinearRegressionFormula(new double[4]);
-                Assert.True(false);
+                Assert.That(false);
             }
             catch (ArgumentException)
             {
-                Assert.True(true);
+                Assert.That(true);
             }
         }
 
@@ -479,11 +479,11 @@ namespace CalculatorLogicUnitTests
                 try
                 {
                     linRegPredictCalc.PredictYFromLinearRegressionFormula(new double[2]);
-                    Assert.True(false);
+                    Assert.That(false);
                 }
                 catch (ArgumentException)
                 {
-                    Assert.True(true);
+                    Assert.That(true);
                 }
             }
         }
@@ -496,11 +496,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegPredictCalc.PredictYFromLinearRegressionFormula(inputList);
-                Assert.True(true);
+                Assert.That(true);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
         [Test]
@@ -511,11 +511,11 @@ namespace CalculatorLogicUnitTests
             try
             {
                 
-                Assert.True(linRegPredictCalc.PredictYFromLinearRegressionFormula(inputList) == 5.0);
+                Assert.That(linRegPredictCalc.PredictYFromLinearRegressionFormula(inputList) == 5.0);
             }
             catch (ArgumentException)
             {
-                Assert.True(false);
+                Assert.That(false);
             }
         }
     }

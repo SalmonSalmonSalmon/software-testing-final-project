@@ -1,7 +1,6 @@
 # KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
 
-Quick note: Who even cares anymore. Maybe if I edit this thing while it's late there will be some kind of underflow error because D2L can't handle a negative point value. I'm well and truly sorry for inflicting my existence on you, you deserved better than to ever have me around you.
-## Table of Contents
+Quick note: The video demonstrates an old version of the project that had some old access methods. The meat of the project remains the same, just reformatted to be more proper in the immediate wake of a panic attack.
 + [Environment](#environment)
 + [Executing the Web Application](#executing-the-web-application)
 + [Executing Unit Tests](#executing-unit-tests)
@@ -20,8 +19,7 @@ Ideally everything needed should work with what's included in the GitHub, at mos
 ## Executing the Web Application
 Open the command line, then type:
 ```
-"dotnet run <project file path>\src\Calculator\CalculatorWebServerApp\CalculatorWebServerApp.csproj"
-```
+"dotnet run --project <project file path>\src\Calculator\CalculatorWebServerApp\CalculatorWebServerApp.csproj"
 You should see a section of the running file that says "now listening on:" followed by a link to a localhost port. Copy that link into your browser to view the page while the program is running.
 ![image](SoftwareTestingWebAppSampleOutput.png)
 ## Executing Unit Tests
