@@ -15,6 +15,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=81bed1b7_002Dafc8_002D4384_002D8410_002Db078fa96c959/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;CalculatorLogicUnitTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\Users\Duncan\Documents\GitHub\software-testing-final-project\src\Calculator\CalculatorLogicUnitTests" Presentation="&amp;lt;CalculatorLogicUnitTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b9e33532_002D92b6_002D41f1_002Daeda_002De6787c55c514/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculatorLogicUnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B2786564-4283-4D95-AC85-597E01E137DF::.NETFramework,Version=v4.7.2::CalculatorLogicUnitTests.CalculatorLogicUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd2b3049_002D4993_002D412d_002Db1cb_002Dbddf7a76d306/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorUISystem_FormatSampleSD_AccurateResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::21EF0870-BC3E-47DD-84A4-34832C7A5242::net9.0::CalculatorEndToEndTests.Tests.CalculatorUISystem_FormatSampleSD_AccurateResult&lt;/TestId&gt;&#xD;
