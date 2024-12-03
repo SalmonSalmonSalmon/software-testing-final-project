@@ -21,7 +21,7 @@ Ideally everything needed should work with what's included in the GitHub, at mos
 ## Executing the Web Application
 Open the command line, then type:
 ```
-"<project file path>\src\Calculator\CalculatorWebServerApp\bin\Debug\net9.0\CalculatorWebServerApp.exe"
+"dotnet run <project file path>\src\Calculator\CalculatorWebServerApp\bin\Debug\net9.0\CalculatorWebServerApp.exe"
 ```
 You should see a section of the running file that says "now listening on:" followed by a link to a localhost port. Copy that link into your browser to view the page while the program is running.
 ![image](SoftwareTestingWebAppSampleOutput.png)
