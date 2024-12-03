@@ -40,4 +40,4 @@ dotnet test "<project file path>\src\Calculator\CalculatorEndToEndTests\bin\Debu
 ```
 ![image](SoftwareTestingEndToEndTestScreenshot.png)
 ## Final Video Presentation
-<iframe width="560" height="315" src="https://youtu.be/vwPGes3JpFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![alt text](https://youtu.be/vwPGes3JpFU)](https://youtu.be/vwPGes3JpFU)
