@@ -40,4 +40,4 @@ dotnet test "<project file path>\src\Calculator\CalculatorEndToEndTests\bin\Debu
 ```
 ![image](SoftwareTestingEndToEndTestScreenshot.png)
 ## Final Video Presentation
-[![alt text](https://youtu.be/vwPGes3JpFU)](https://youtu.be/vwPGes3JpFU)
+Link to video here: https://youtu.be/vwPGes3JpFU
