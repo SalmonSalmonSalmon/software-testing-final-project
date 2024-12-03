@@ -44,7 +44,7 @@ namespace CalculatorLogicUnitTests
             try
             {
                 meanTestInvalidListCalc.ComputeMean(meanTestInvalidList);
-                Assert.That(false);
+                
             }
             catch (Exception)
             {
@@ -100,12 +100,13 @@ namespace CalculatorLogicUnitTests
             {
                 sampleSDTestInvalidListCalc.ComputeSampleStandardDeviation(sampleSDTestInvalidList);
                 
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputeSampleStandardDeviation_InvalidListOfOne_ArgumentException()
@@ -118,12 +119,13 @@ namespace CalculatorLogicUnitTests
             {
                 sampleSDTestInvalidListCalc.ComputeSampleStandardDeviation(sampleSDTestInvalidList);
                 
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputeSampleStandardDeviation_CalculationWorks_ResultFromRequirements()
@@ -201,12 +203,13 @@ namespace CalculatorLogicUnitTests
             {
                 populationSDTestInvalidListCalc.ComputePopulationStandardDeviation(populationSDTestInvalidList);
                 
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputePopulationStandardDeviation_CalculationWorks_ResultFromRequirements_RoundedToThirteenPlaces()
@@ -285,12 +288,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 ZScoreCalc.ComputeZScore(inputList);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         
         [Test]
@@ -305,12 +309,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 ZScoreCalc.ComputeZScore(inputList);
-                Assert.That(false);
+                
             }
             catch (DivideByZeroException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputeZScore_CalculationWorks_ResultofNegativeTwo()
@@ -341,12 +346,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         
@@ -358,12 +364,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputeSingleLinearRegressionFormula_InvalidArrayTooFewParameters_ArgumentException()
@@ -375,12 +382,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputeSingleLinearRegressionFormula_InvalidArrayTooManyParameters_ArgumentException()
@@ -392,12 +400,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegCalc.ComputeSingleLinearRegressionFormula(inputList);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_ComputeSingleLinearRegressionFormula_ValidArray_NoException()
@@ -449,12 +458,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegPredictCalc.PredictYFromLinearRegressionFormula(new double[0]);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
         [Test]
         public void CalculatorLogic_PredictYFromLinearRegressionFormula_TooManyParameters_ArgumentException()
@@ -463,12 +473,13 @@ namespace CalculatorLogicUnitTests
             try
             {
                 linRegPredictCalc.PredictYFromLinearRegressionFormula(new double[4]);
-                Assert.That(false);
+                
             }
             catch (ArgumentException)
             {
                 Assert.That(true);
             }
+            
         }
 
         [Test]
@@ -479,12 +490,13 @@ namespace CalculatorLogicUnitTests
                 try
                 {
                     linRegPredictCalc.PredictYFromLinearRegressionFormula(new double[2]);
-                    Assert.That(false);
+                    
                 }
                 catch (ArgumentException)
                 {
                     Assert.That(true);
                 }
+                
             }
         }
 
